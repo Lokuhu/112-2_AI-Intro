@@ -1,0 +1,32 @@
+20240415 除錯
+
+沒有進到迴圈就跳出來了>只印出了原始成本
+
+
+把if restroom_position == best_position:  # 確保所選的廁所位置不在遊樂場上
+                continue
+刪掉>沒什麼用
+
+
+把 restroom not in playground 加進前面的if
+
+
+加上restrooms.append(new_position) 插入的用法
+
+
+縮排很重要 indent error
+
+
+把 new_position = [restroom_position[0] + move[0], restroom_position[1] + move[1]
+外面的[] 改成()，因為上一行的for move in [(0, 1), (0, -1), (1, 0), (-1, 0)]: 位置是用()圈住的！！！
+
+然後就成功了~~
+
+下面的random hcs 依照上面的hcs改（hcs已經確定沒有問題了）
+
+之後繼續努力！
+
+助教：spyfamily chocolate cold
+
+
+
